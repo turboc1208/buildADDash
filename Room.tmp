@@ -1,0 +1,19 @@
+#
+# Main arguments, all optional
+#
+title: <room> Panel
+widget_dimensions: [120, 120]
+widget_margins: [5, 5]
+columns: 8
+
+label:
+    widget_type: label
+    text: Welcome to the <room> 
+clock:
+    widget_type: clock
+<widgets>
+layout:
+    - include: header 
+    -
+<layout>
+    - include: footer
