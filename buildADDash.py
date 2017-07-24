@@ -35,17 +35,11 @@ class buildADDash(appapi.AppDaemon):
        filedir=filedir+"/"
      tmpname=filedir+tmpname
      self.log("tmpname={}".format(tmpname))
-<<<<<<< HEAD
-     for entity in self.get_state("group"):
-       enttyp,name=self.split_entity(entity)
-       if name[:4]=="room":
-=======
      group_entities=self.get_state("group")
      self.log("group_entities={}".format(group_entities))
      for entity in group_entities:
        enttyp,name=self.split_entity(entity)
        if "view" in  group_entities[entity]["attributes"]:
->>>>>>> 5a7a914a6f8a96ce25c4e9eb5731ef193d834f4d
          roomname=filedir + name[5:] +".dash"
          self.log("entity={}, roomanme={}".format(entity,roomname))
          fout=open(roomname,"wt")
