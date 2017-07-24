@@ -4,6 +4,9 @@ import os
 ###############################
 # build AppDaemonDash boards   PRE ALPHA (try at your own risk)  I have not tested much.
 #
+# Version     Date        Name     Description
+# 0.2.0       24JUL2017   CC       New server
+#
 # assumptions:
 # all group names follow the format room_<roomname>
 # 
